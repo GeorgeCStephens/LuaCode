@@ -6,7 +6,7 @@ function mineUpUntilAir ()
     local blocksMovedUp = 0
 
    --mine up til air is reached
-   while turtle.detectUp() == true do
+   while turtle.detectUp() do
     turtle.digUp()
     turtle.up()
     blocksMovedUp = blocksMovedUp + 1
@@ -18,7 +18,7 @@ end
 
 function moveForward()
     --Remove the blocks in front
-    while turtle.detect() == true do turtle.dig() end --loop in case of falling blocks
+    while turtle.detect() do turtle.dig() end --loop in case of falling blocks
 
     --move forward
     turtle.forward()
