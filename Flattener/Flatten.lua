@@ -5,7 +5,7 @@ end
 function mineUpUntilAir ()
     local blocksMovedUp = 0
 
-   --mine up till air is reached
+   --mine up til air is reached
    while turtle.detectUp() == true do
     turtle.digUp()
     turtle.up()
